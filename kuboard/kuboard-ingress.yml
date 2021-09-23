@@ -5,7 +5,7 @@ metadata:
   namespace: kube-system
 spec:
   rules:
-  - host:  k8s.52liangzy.top
+  - host:  k8s.liangzy.com
     http:
       paths:
       - path: /
