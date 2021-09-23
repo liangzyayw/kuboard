@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: kubeman
+  namespace: kube-system
+spec:
+  rules:
+  - host:  k8s.52liangzy.top
+    http:
+      paths:
+      - path: /
+        backend:
+        pathType: ImplementationSpecific
+          serviceName: kuboard
+          servicePort: http
